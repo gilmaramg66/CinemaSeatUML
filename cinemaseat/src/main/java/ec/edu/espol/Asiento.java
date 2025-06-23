@@ -1,6 +1,11 @@
 package ec.edu.espol;
 
 public abstract class Asiento {
+
+    static <T> boolean estaDisponible(T t) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     protected int fila;
     protected int columna;
     protected String tipo;
