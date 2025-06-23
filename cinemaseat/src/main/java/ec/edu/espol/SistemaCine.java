@@ -8,13 +8,21 @@ public class SistemaCine {
     private final List<SalaCine> salas    = new ArrayList<>();
     private final List<Usuario>  usuarios = new ArrayList<>();
 
-    /* ---------- getters ---------- */
-    public List<SalaCine> getSalas()    { return Collections.unmodifiableList(salas); }
-    public List<Usuario>  getUsuarios() { return Collections.unmodifiableList(usuarios); }
+    
+    public List<SalaCine> getSalas()    { 
+        return Collections.unmodifiableList(salas); 
+    }
+    public List<Usuario>  getUsuarios() { 
+        return Collections.unmodifiableList(usuarios); 
+    }
 
-    /* ---------- lógica ---------- */
-    public void agregarSala(SalaCine sala)    { salas.add(sala); }
-    public void registrarUsuario(Usuario u)   { usuarios.add(u); }
+    
+    public void agregarSala(SalaCine sala){ 
+        salas.add(sala); 
+    }
+    public void registrarUsuario(Usuario u)   { 
+        usuarios.add(u); 
+    }
 
     public void configurarSala(String salaId, Funcion funcion) {
         salas.stream()

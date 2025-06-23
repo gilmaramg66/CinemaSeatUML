@@ -16,7 +16,7 @@ public class SalaCine {
     public List<Asiento>     getAsientos()  { return Collections.unmodifiableList(asientos); }
     public List<Funcion>     getFunciones() { return Collections.unmodifiableList(funciones); }
 
-    /* ---------- lógica ---------- */
+    
     public Asiento obtenerAsiento(String asientoId) {
         return asientos.stream()
                 .filter(a -> (a.fila + "" + a.columna).equalsIgnoreCase(asientoId))
