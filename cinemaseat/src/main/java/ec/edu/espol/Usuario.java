@@ -10,24 +10,29 @@ public Usuario(String id, String name, String email){
     this.name = name;
     this.email = email;
 } 
-public String getId()        { return id;    }
-    public void   setId(String id) { this.id = id; }
+public String getId(){ 
+    return id;    
+}
+    public void   setId(String id) { 
+        this.id = id; 
+    }
 
-    public String getName()        { 
+    public String getName(){ 
         return name; }
+
     public void   setName(String n){ 
         this.name = n;}
 
-    public String getEmail()         { 
+    public String getEmail(){ 
         return email; }
-    public void   setEmail(String e) { 
+
+    public void   setEmail(String e){ 
         this.email = e; }
 
-    
-    public void seleccionarAsiento() { 
+    public void seleccionarAsiento(){ 
         
      }
-    public Boleto comprarBoleto()    { 
+    public Boleto comprarBoleto(){ 
          return null; }
     public void recibirNotificacion(){ 
         
