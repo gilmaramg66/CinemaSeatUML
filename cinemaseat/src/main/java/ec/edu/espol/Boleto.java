@@ -1,5 +1,8 @@
 package ec.edu.espol;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 public class Boleto {
     private final LocalDateTime fechaCompra;
     private final Usuario usuario;
@@ -17,12 +20,18 @@ public class Boleto {
     }
 
     /* ---------- getters  ---------- */
-    public LocalDateTime getFechaCompra() { return fechaCompra; }
-    public Usuario       getUsuario()     { return usuario;     }
-    public Funcion       getFuncion()     { return funcion;     }
+    public LocalDateTime getFechaCompra() { 
+        return fechaCompra; 
+    }
+    public Usuario getUsuario(){ 
+        return usuario;     
+    }
+    public Funcion getFuncion(){ 
+        return funcion;     
+    }
     public List<Asiento> getAsientos()    { return asientos;    }
 
-    /* ---------- lógica ---------- */
+    
     public double obtenerPrecio() {
         return asientos.stream()
                        .mapToDouble(Asiento::obtenerPrecio)
